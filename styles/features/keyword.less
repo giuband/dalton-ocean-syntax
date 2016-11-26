@@ -1,0 +1,23 @@
+.keyword.control,
+.string.quoted.template .keyword.control {
+  color : @purple;
+}
+
+.constant .punctuation,
+.keyword.operator.logical,
+.keyword.operator,
+.keyword.unit,
+.string.quoted.template .keyword.operator.logical,
+.string.quoted.template .keyword.operator,
+.string.quoted.template .keyword.unit {
+  color : @purple;
+}
+
+.keyword.operator.decoration,
+.keyword.operator.decoration + .variable.other.readwrite {
+  color : @green;
+}
+
+.keyword.operator.accessor {
+  color : @light-grey;
+}

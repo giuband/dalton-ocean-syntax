@@ -1,0 +1,33 @@
+.entity {
+  color : @mauve;
+}
+
+.entity.name.tag.yaml {
+  color : @blue;
+}
+
+.meta.method-call .storage + .entity.name.function,
+.storage + .entity.name.function {
+  color : @green;
+}
+
+.meta.function-call,
+.meta.method-call {
+  .entity.name.function {
+    color : @light-grey;
+  }
+}
+
+.entity.tag {
+  color : @grey;
+}
+
+.entity.pseudo-class {
+  color : @grey;
+}
+
+.meta.method.declaration > {
+  .entity.function {
+    color : @green;
+  }
+}
