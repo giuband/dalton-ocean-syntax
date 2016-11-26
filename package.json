@@ -1,7 +1,7 @@
 {
   "name": "dalton-ocean-syntax",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "A darker fork of the beautiful Dalton syntax theme by SeanJM",
   "keywords": [
     "syntax",
@@ -9,7 +9,7 @@
     "purple",
     "ocean"
   ],
-  "repository": "https://github.com/atom/dalton-ocean-syntax",
+  "repository": "https://github.com/giuband/dalton-ocean-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
