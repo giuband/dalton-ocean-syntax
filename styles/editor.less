@@ -4,14 +4,14 @@
 .atom-text-editor .gutter,
 .pane-item,
 .results-view,
-:host,
-:host .gutter {
+atom-text-editor,
+atom-text-editor .gutter {
   color            : @text-color;
   background-color : @dark-blue;
 }
 
 .atom-text-editor.is-focused .cursor,
-:host(.is-focused) .cursor {
+atom-text-editor .cursor {
   border-color : @blue;
 }
 
@@ -19,16 +19,17 @@
 .cursor-line,
 .list-group .selected::before,
 .list-tree .selected::before,
-:host(.is-focused) .selection .region {
+atom-text-editor .selection .region {
   background-color : lighten(@dark-blue, 7%);
 }
 
-atom-text-editor::shadow .find-result .region,
+
+atom-text-editor.editor .find-result .region,
 atom-text-editor .find-result .region {
   border-color : lighten(@dark-blue, 30%);
 }
 
-atom-text-editor::shadow .current-result .region,
+atom-text-editor.editor .current-result .region,
 atom-text-editor .current-result .region {
   border-color : lighten(@dark-blue, 10%);
 }
@@ -36,18 +37,18 @@ atom-text-editor .current-result .region {
 .atom-text-editor.is-focused .line-number.cursor-line-no-selection,
 .atom-text-editor.is-focused .line.cursor-line,
 .tool-panel,
-:host(.is-focused) .line-number.cursor-line-no-selection,
-:host(.is-focused) .line.cursor-line {
+atom-text-editor .line-number.cursor-line-no-selection,
+atom-text-editor .line.cursor-line {
   background-color : @dark-blue;
 }
 
 .atom-text-editor .invisible-character,
-:host .invisible-character {
+atom-text-editor .invisible-character {
   color : @light-grey;
 }
 
 .atom-text-editor .indent-guide,
-:host .indent-guide {
+atom-text-editor .indent-guide {
   color : mix(@dark, @dark-blue, 30%);
 }
 
@@ -59,9 +60,9 @@ atom-text-editor .current-result .region {
 .atom-text-editor .gutter .line-number.git-line-added,
 .atom-text-editor .gutter .line-number.git-line-modified,
 .atom-text-editor .gutter .line-number.git-line-removed,
-:host .gutter .line-number.git-line-added,
-:host .gutter .line-number.git-line-modified,
-:host .gutter .line-number.git-line-removed {
+atom-text-editor .gutter .line-number.git-line-added,
+atom-text-editor .gutter .line-number.git-line-modified,
+atom-text-editor .gutter .line-number.git-line-removed {
   padding-left      : calc(0.5em - 5px);
   border-left-width : 5px;
 }

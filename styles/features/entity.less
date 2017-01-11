@@ -1,33 +1,29 @@
-.entity {
+.syntax--entity {
   color : @mauve;
 }
 
-.entity.name.tag.yaml {
+.syntax--entity.syntax--name.syntax--tag.syntax--yaml {
   color : @blue;
 }
 
-.meta.method-call .storage + .entity.name.function,
-.storage + .entity.name.function {
+.syntax--meta.syntax--method-call .syntax--storage + .syntax--entity.syntax--name.syntax--function,
+.syntax--storage + .syntax--entity.syntax--name.syntax--functionn {
   color : @green;
 }
 
-.meta.function-call,
-.meta.method-call {
-  .entity.name.function {
-    color : @light-grey;
-  }
+.syntax--meta.syntax--function-call .syntax--entity.syntax--name.syntax--function,
+.syntax--meta.syntax--method-call .syntax--entity.syntax--name.syntax--function {
+  color : @light-grey;
 }
 
-.entity.tag {
+.syntax--entity.syntax--tag {
   color : @grey;
 }
 
-.entity.pseudo-class {
+.syntax--entity.syntax--pseudo-class {
   color : @grey;
 }
 
-.meta.method.declaration > {
-  .entity.function {
-    color : @green;
-  }
+.syntax--meta.syntax--method.syntax--declaration .syntax--entity.syntax--function {
+  color : @green;
 }
